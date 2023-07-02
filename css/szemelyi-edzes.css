@@ -105,3 +105,29 @@
 .grid-hed-2>h4>a {
     text-decoration: none;
 }
+
+/* ----description---- */
+.description {
+    padding: 5rem 0;
+    background-color: var(--main-background);
+}
+
+.description-content {
+    padding: 1.5rem 0;
+}
+
+.description-content h2 {
+    color: var(--main-paleorange);
+}
+
+.description h4 {
+    color: var(--font-color);
+}
+
+.description-h5 {
+    text-align: center;
+    color: var(--font-color);
+    text-shadow: 1px 1px 2px pink;
+}
+
+/* ---description-end-- */
