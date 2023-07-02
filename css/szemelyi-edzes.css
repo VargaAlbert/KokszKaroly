@@ -131,3 +131,114 @@
 }
 
 /* ---description-end-- */
+
+/* -----PRICE----- */
+#price-section {
+    background-color: var(--main-background);
+    border-top: 5px solid var(--main-paleorange);
+    border-bottom: 5px solid var(--main-paleorange);
+}
+
+.price-container {
+
+    margin: 2rem;
+    background-color: var(--main-background);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.price-content {
+    border-radius: 10px;
+    height: 600px;
+    width: 300px;
+    min-width: 250px;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.price-head>h3 {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.price-head>h4 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.price-body>ul {
+    display: inline-block;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.price-body>ul>li {
+    list-style-type: "✓";
+}
+
+.price-h3 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.price-button-container {
+    padding: 1rem;
+}
+
+.price-button-container>button {
+    width: 80%;
+    height: 3rem;
+}
+
+/* --bronz-- */
+
+.bronz-border {
+    border: 2px solid var(--price-bronz);
+}
+
+.bronz-border:hover {
+    box-shadow: var(--price-bronz) 0px 2px 8px, var(--price-bronz) 0px 0px 0px 6px;
+}
+
+.price-bronz-color {
+    color: var(--price-bronz);
+}
+
+/* ----silver----- */
+
+.silver-border {
+    border: 2px solid var(--price-silver);
+}
+
+.silver-border:hover {
+    box-shadow: var(--price-silver) 0px 2px 8px, var(--price-silver) 0px 0px 0px 6px;
+}
+
+.price-silver-color {
+    color: var(--price-silver);
+}
+
+/* ---gold----- */
+
+.gold-border {
+    border: 2px solid var(--price-gold);
+}
+
+.gold-border:hover {
+    box-shadow: var(--price-gold) 0px 2px 8px, var(--price-gold) 0px 0px 0px 6px;
+}
+
+.price-gold-color {
+    color: var(--price-gold);
+}
+
+/* ---PRICE-END--- */
