@@ -1,0 +1,33 @@
+/* ----RESET------- */
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----RESET-END--- */
+
+:root {
+    --main-paleorange: #eea849;
+    --main-orange: #f46b45;
+    --main-white: #ffffff;
+    --main-black: #000000;
+    --main-background: #111111;
+    --main-font-color: #0B0B0B;
+    --price-bronz: #cd7f32;
+    --price-silver: #C0C0C0;
+    --price-gold: #FFD700;
+}
+
+.container-my {
+    max-width: 1440px;
+    width: 95%;
+    margin: auto;
+}

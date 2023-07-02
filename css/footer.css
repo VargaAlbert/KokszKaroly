@@ -1,0 +1,35 @@
+footer {
+    background-color: rgb(2, 2, 2);
+    height: 120%;
+}
+
+.footer-content {
+    display: grid;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.footer-div {
+    padding: 0 2rem;
+}
+
+.footer-div>h3 {
+    color: var(--main-paleorange);
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.footer-div>h5 {
+    color: var(--main-white);
+}
+
+.footer-div>h5:hover {
+    color: var(--main-white);
+    color: var(--main-paleorange);
+}
+
+.footer-p {
+    color: var(--main-white);
+    text-align: center;
+    margin-bottom: 0;
+}

@@ -1,0 +1,129 @@
+#services {
+    background-color: var(--main-background);
+    border-top: 4px solid var(--main-orange);
+}
+
+.service-h3 {
+    margin-top: 1.2rem;
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+    color: var(--main-white);
+}
+
+.service-h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    padding: 0 0.5rem;
+    color: var(--main-orange);
+}
+
+
+.services-container {
+    padding: 1rem 0;
+}
+
+.services-content {
+    position: relative;
+    border: 4px solid black;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 20% 0;
+    min-height: 300px;
+    display: grid;
+}
+
+.services-content h4 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    color: var(--main-orange);
+    font-weight: 600;
+}
+
+.services-content p {
+    color: var(--main-white);
+}
+
+.services-icon>svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--main-white);
+}
+
+.services-content::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20% 0;
+    background: rgba(0, 0, 0, 0.871);
+    opacity: 0;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.services-content:hover::after {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.services-content:hover .services-btn {
+    opacity: 1;
+    top: 40%;
+}
+
+.compilation-container img {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.services-btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.services-btn>h5 {
+    color: var(--main-white);
+}
+
+.bronz-color {
+    color: var(--price-bronz);
+}
+
+.silver-color {
+    color: var(--price-silver);
+}
+
+.gold-color {
+    color: var(--price-gold);
+}
+
+.services-btn>h6 {
+    color: var(--main-white);
+    padding-bottom: 0.3rem;
+}
+
+.services-btn>div {
+    padding: 0 0 2rem;
+}
+
+.services-btn>div>span {
+    margin: 0 0.2rem;
+    font-size: 1.2rem;
+}

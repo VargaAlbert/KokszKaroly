@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/references.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Koksz Károly</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <section class="top-nav container-my">
+                <div class="logo">
+                    <a href="#carouselExampleCaptions">KOKSZ KÁROLY</a>
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <span class='menu-button'></span>
+                </label>
+                <ul class="menu">
+                    <li><a href="#about">Bemutatkozás</a></li>
+                    <li><a href="#services">Szolgáltatások</a></li>
+                    <li><a href="#references">Referenciák</a></li>
+                    <li><a href="#prices">Árak</a></li>
+                    <li><a href="#contact">Élérhetőségek</a></li>
+                </ul>
+                <span class="nav-icon">
+                    <img src="./img/cart3.svg" alt="bevásárlokocsiikon">
+                    <span class="crat-text">Kosár(0)</span>
+                </span>
+            </section>
+        </nav>
+    </header>
+    <section class="carousel-container">
+        <div id="carouselExampleCaptions" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-01.jpg" class="d-block w-100"
+                            alt="szemelyi-edzes"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Prémium személyi edzés</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-03.jpg" class="d-block w-100"
+                            alt="fogyas-szalkasitas"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fogyás szálkásitás</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-02.jpg" class="d-block w-100"
+                            alt="tomegnoveles-izomepites"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Rövid időn belüli, Tömegnövelés izomépités</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-04.jpg" class="d-block w-100"
+                            alt="verseny-Felkeszites"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Verseny Felkészités, a jobb eredményért</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-06.jpg" class="d-block w-100"
+                            alt="eroszint-noveles"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Hatékony erőszint növelés</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-00.jpg" class="d-block w-100"
+                            alt="etrend-keszites"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Étrend Készités</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container container-my">
+            <div class="about-text-container">
+                <div class="about-text">
+                    <h4>Rólam:</h4>
+                    <h1>KOKSZ KÁROLY</h1>
+                    <p>Lorem ipsum dolor sit <span class="text-color">amet consectetur adipisicing elit.</span> Aperiam
+                        nisi
+                        autem dignissimos
+                        minus
+                        similique
+                        laudantium minima maxime ipsam cumque ab, <span class="text-color">itaque reiciendis sit</span>
+                        reprehenderit non quam
+                        tenetur.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="text-color">Delectus qui
+                            accusamus, ex dolorem
+                            iusto
+                            impedit</span> laudantium eum corrupti id alias mollitia quis. Corporis rem, quia quis
+                        soluta
+                        necessitatibus
+                        molestias pariatur? <span class="text-color">Lorem ipsum dolor sit amet consectetur</span>
+                        adipisicing elit. Illo,
+                        odio. Veritatis
+                        qui
+                        voluptates quas porro veniam debitis nisi ea fugiam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur <span class="text-color">adipisicing elit.</span> Sit
+                        officia
+                        repudiandae atque
+                        praesentium
+                        hic
+                        quas. Ea a doloremque, corrupti omnis tempore asperiores ratione at doloribus, repellat nesciunt
+                        nam
+                        voluptatum aperiam!</p>
+                </div>
+            </div>
+            <div class="about-img-container">
+                <img class="about-img" src="./img/about-img.png" alt="koksz-karoly">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h3 class="service-h3">SZOLGÁLTATÁSOK:</h3>
+        <h2 class="service-h2">MIBEN TUDOK SEGITENI?</h2>
+        <div class="services-container container-my">
+            <div class="services-content">
+                <div class="services-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                    </svg>
+                </div>
+                <h4>Fogyás szálkásitás</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque laudantium quidem incidunt ex
+                    amet voluptates.
+                </p>
+                <div class="services-btn">
+                    <h5>Csomagok:</h5>
+                    <div>
+                        <span class="bronz-color">BRONZ</span>
+                        <span class="silver-color">SILVER</span>
+                        <span class="gold-color">GOLD</span>
+                    </div>
+                    <h6>35.000Ft-tól.</h6>
+                    <a href="" class="btn btn-outline-warning">Megnézem</a>
+                </div>
+            </div>
+            <div class="services-content">
+                <div class="services-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                    </svg>
+                </div>
+                <h4>Tömegnövelés izomépités</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque laudantium quidem incidunt ex
+                    amet voluptates.
+                </p>
+                <div class="services-btn">
+                    <h5>Csomagok:</h5>
+                    <div>
+                        <span class="bronz-color">BRONZ</span>
+                        <span class="silver-color">SILVER</span>
+                        <span class="gold-color">GOLD</span>
+                    </div>
+                    <a href="" class="btn btn-outline-warning">Megnézem</a>
+                </div>
+            </div>
+            <div class="services-content">
+                <div class="services-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                    </svg>
+                </div>
+                <h4>Személyi edzés</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque laudantium quidem incidunt ex
+                    amet voluptates.
+                </p>
+                <div class="services-btn">
+                    <h5>Csomagok:</h5>
+                    <div>
+                        <span class="bronz-color">BRONZ</span>
+                        <span class="silver-color">SILVER</span>
+                        <span class="gold-color">GOLD</span>
+                    </div>
+                    <a href="" class="btn btn-outline-warning">Megnézem</a>
+                </div>
+            </div>
+            <div class="services-content">
+                <div class="services-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                    </svg>
+                </div>
+                <h4>Verseny Felkészités</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque laudantium quidem incidunt ex
+                    amet voluptates.
+                </p>
+                <div class="services-btn">
+                    <h5>Csomagok:</h5>
+                    <div>
+                        <span class="bronz-color">BRONZ</span>
+                        <span class="silver-color">SILVER</span>
+                        <span class="gold-color">GOLD</span>
+                    </div>
+                    <a href="" class="btn btn-outline-warning">Megnézem</a>
+                </div>
+            </div>
+            <div class="services-content">
+                <div class="services-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                    </svg>
+                </div>
+                <h4>Erőszint növelés</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque laudantium quidem incidunt ex
+                    amet voluptates.
+                </p>
+                <div class="services-btn">
+                    <h5>Csomagok:</h5>
+                    <div>
+                        <span class="bronz-color">BRONZ</span>
+                        <span class="silver-color">SILVER</span>
+                        <span class="gold-color">GOLD</span>
+                    </div>
+                    <a href="" class="btn btn-outline-warning">Megnézem</a>
+                </div>
+            </div>
+            <div class="services-content">
+                <div class="services-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
+                        viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                        <path
+                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
+                    </svg>
+                </div>
+                <h4>Étrend Készités</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque laudantium quidem incidunt ex
+                    amet voluptates.
+                </p>
+                <div class="services-btn">
+                    <h5>Csomagok:</h5>
+                    <div>
+                        <span class="bronz-color">BRONZ</span>
+                        <span class="silver-color">SILVER</span>
+                        <span class="gold-color">GOLD</span>
+                    </div>
+                    <a href="" class="btn btn-outline-warning">Megnézem</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="references">
+        <div class="slider-container container-my">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref00.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Kiss István</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> +10kg / 3 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref01.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Szabó Regina</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> -5kg / 2 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref02.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Nagy Anita</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> -14kg / 4 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref03.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Kovács János</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> +8kg / 3 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref00.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Nagy Béla</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> -4kg / 1 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref01.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Jakab Anna</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> -3kg / 2 hét</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref02.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Virág Katalin</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> -7kg / 6 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref00.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Kiss István</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> +10kg / 3 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref01.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Szabó Regina</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> -5kg / 2 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref02.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Nagy Anita</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> -14kg / 4 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref03.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Kovács János</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> +8kg / 3 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref00.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Nagy Béla</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> -4kg / 1 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref01.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Jakab Anna</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> -3kg / 2 hét</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img class="ref-img" src="./img/ref02.jpg" alt="velemeny-egy">
+                        <h5 class="ref-name">Virág Katalin</h5>
+                        <div class="star-rating">
+                            <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                        </div>
+                        <div class="ref-text">
+                            <h6> -7kg / 6 hónap</h6>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis, tempore ex
+                                libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
+                                dolor incidunt. Facere, recusandae aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- --------------------------------------------------------- -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container-my">
+            <div class="contact-h">
+                <h2 class="contact-h2">Fordulj hozzám bizalommal.</h2>
+                <h5 class="contact-h5">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio provident
+                    blanditiis neque."
+                </h5>
+            </div>
+            <div class="form-contener">
+                <form action="GET">
+                    <div class="grid-contener-form">
+                        <div class="grid-contener-form-item0 styled-input">
+                            <input type="text" name="name" class="form-input" placeholder="Teljes neved." required>
+                        </div>
+                        <div class="grid-contener-form-item1 styled-input">
+                            <input type="email" name="email" class="form-input" placeholder="example@gmail.com"
+                                required>
+                        </div>
+                        <div class="grid-contener-form-item2 styled-input">
+                            <input type="tel" name="phone" class="form-input" placeholder="06-30-515-5555" required>
+                        </div>
+                        <div class="grid-contener-form-item3">
+                            <label><input type="radio" id="huey" name="drone" value="men">Férfi</label>
+                            <label><input type="radio" id="dewey" name="drone" value="girl">Nő</label>
+                            <label><input type="radio" id="louie" name="drone" value="no-nem" checked>Nem adom
+                                meg</label>
+                        </div>
+                        <div class="grid-contener-form-item4">
+                            <input type="date" name="date" class="form-input">
+                        </div>
+                        <div class="grid-contener-form-item5">
+                            <textarea placeholder="Üzenet:" name="mesage" class="form-input" required></textarea>
+                        </div>
+                        <div class="grid-contener-form-item6">
+                            <button type="submit" class="btn btn-outline-warning">Elküld</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-my">
+            <div class="footer-content">
+                <div class="footer-div">
+                    <h3>információk</h3>
+                    <h5>Gyakori kérdések</h5>
+                    <h5>Adatkezelési tájékoztató</h5>
+                    <h5>Általános szerződési feltételek</h5>
+                </div>
+                <div class="footer-div">
+                    <h3>Gyurma-app</h3>
+                    <h5>Android</h5>
+                    <h5>ISO</h5>
+                    <h5>PC</h5>
+                </div>
+                <div class="footer-div">
+                    <h3>Social media</h3>
+                    <h5>Instagram</h5>
+                    <h5>TikTok</h5>
+                    <h5>Facebook</h5>
+                    <h5>YouTube</h5>
+                </div>
+            </div>
+            <P class="footer-p">COPYRIGHT &copy; 2023 Varga Albert</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>

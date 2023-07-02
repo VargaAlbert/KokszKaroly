@@ -1,0 +1,41 @@
+#about {
+    background-color: var(--main-background);
+    border-top: 4px solid var(--main-orange);
+}
+
+.about-container {
+    padding: 1rem;
+}
+
+.about-text-container {
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.about-text>h4 {
+    color: var(--main-white);
+}
+
+.about-text>h1 {
+    color: var(--main-orange);
+    font-size: 2rem;
+}
+
+.about-text>p {
+    color: #E8EAED;
+}
+
+.text-color {
+    color: var(--main-orange);
+}
+
+.about-img-container {
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.about-img {
+    width: 100%;
+}
