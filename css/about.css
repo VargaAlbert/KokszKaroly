@@ -39,3 +39,22 @@
 .about-img {
     width: 100%;
 }
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    .about-container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .about-img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1440px) {}

@@ -122,3 +122,53 @@ button[type="submit"] {
     text-align: center;
     font-size: 1.2rem;
 }
+
+@media (min-width: 576px) {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        height: 3rem;
+    }
+
+    .grid-contener-form-item3>label {
+        padding: 0.3rem;
+    }
+
+    input[type="date"] {
+        height: 3rem;
+    }
+
+    textarea[placeholder="Üzenet:"] {
+        height: 9rem;
+    }
+
+    button[type="submit"] {
+        height: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .grid-contener-form {
+
+        width: 60vw;
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-areas:
+            "formA formA"
+            "formB formC"
+            "formD formE"
+            "formF formF"
+            "formG formG";
+    }
+
+
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1440px) {}

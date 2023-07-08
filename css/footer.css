@@ -33,3 +33,19 @@ footer {
     text-align: center;
     margin-bottom: 0;
 }
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1440px) {}

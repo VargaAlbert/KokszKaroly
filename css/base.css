@@ -1,15 +1,10 @@
 /* ----RESET------- */
-html {
-    font-size: 16px;
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
+* {
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    user-select: none;
 }
 
 /* ----RESET-END--- */
@@ -20,6 +15,7 @@ html {
     --main-white: #ffffff;
     --main-black: #000000;
     --main-background: #111111;
+    --main-background-price: #181818;
     --main-font-color: #0B0B0B;
 
     --font-color: #b1aeae;
