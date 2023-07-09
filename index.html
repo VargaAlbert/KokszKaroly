@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/location.css">
     <link rel="stylesheet" href="./css/references.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <!--     <link rel="stylesheet" href="./css/responsive.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Koksz Károly</title>
 </head>
@@ -38,88 +39,29 @@
                     <li><a href="#contact">Élérhetőségek</a></li>
                 </ul>
                 <span class="nav-icon">
-                    <img src="./img/cart3.svg" alt="bevásárlokocsiikon">
+                    <i class="bi bi-cart-fill"></i>
                     <span class="crat-text">Kosár(0)</span>
                 </span>
             </section>
         </nav>
     </header>
-    <section class="carousel-container">
-        <div id="carouselExampleCaptions" class="carousel slide container" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-                    aria-label="Slide 6"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-01.jpg" class="d-block w-100"
-                            alt="szemelyi-edzes"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Prémium személyi edzés</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-03.jpg" class="d-block w-100"
-                            alt="fogyas-szalkasitas"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Fogyás szálkásitás</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-02.jpg" class="d-block w-100"
-                            alt="tomegnoveles-izomepites"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Rövid időn belüli, Tömegnövelés izomépités</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-04.jpg" class="d-block w-100"
-                            alt="verseny-Felkeszites"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Verseny Felkészités, a jobb eredményért</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-06.jpg" class="d-block w-100"
-                            alt="eroszint-noveles"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Hatékony erőszint növelés</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <a href="./szemelyi-edzes.html"><img src="./img/carousel-00.jpg" class="d-block w-100"
-                            alt="etrend-keszites"></a>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Étrend Készités</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
+
+    <section id="home">
+        <div class="home-contant-container">
+            <div class="home-contant">
+                <h1>Koksz Károly Prémium Személyi edző</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h3>
+                <h4>Itaque excepturi recusandae necessitatibus
+                    expedita, libero accusamus dolorem porro iusto tenetur officiis consequatur officia voluptates
+                    aspernatur et sed obcaecati. Amet, ipsam quidem.
+                </h4>
+                <div class="home-button">
+                    <a class="btn btn-outline-warning" href="">Rólam</a>
+                    <a class="btn-two btn btn-warning " href="">Szolgáltatások</a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        </div>
+        <div class="home-black-div">
         </div>
     </section>
 
@@ -127,9 +69,10 @@
         <div class="about-container container-my">
             <div class="about-text-container">
                 <div class="about-text">
-                    <h4>Rólam:</h4>
-                    <h1>KOKSZ KÁROLY</h1>
-                    <p>Lorem ipsum dolor sit <span class="text-color">amet consectetur adipisicing elit.</span> Aperiam
+                    <h4 class="about-text-h4">Rólam:</h4>
+                    <h2 class="about-text-h2">KOKSZ KÁROLY</h2>
+                    <p class="about-text-p">Lorem ipsum dolor sit <span class="text-color">amet consectetur adipisicing
+                            elit.</span> Aperiam
                         nisi
                         autem dignissimos
                         minus
@@ -137,7 +80,8 @@
                         laudantium minima maxime ipsam cumque ab, <span class="text-color">itaque reiciendis sit</span>
                         reprehenderit non quam
                         tenetur.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="text-color">Delectus qui
+                    <p class="about-text-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span
+                            class="text-color">Delectus qui
                             accusamus, ex dolorem
                             iusto
                             impedit</span> laudantium eum corrupti id alias mollitia quis. Corporis rem, quia quis
@@ -148,7 +92,8 @@
                         odio. Veritatis
                         qui
                         voluptates quas porro veniam debitis nisi ea fugiam.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur <span class="text-color">adipisicing elit.</span> Sit
+                    <p class="about-text-p">Lorem ipsum dolor sit amet consectetur <span class="text-color">adipisicing
+                            elit.</span> Sit
                         officia
                         repudiandae atque
                         praesentium
@@ -170,12 +115,7 @@
         <div class="services-container container-my">
             <div class="services-content">
                 <div class="services-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
-                        viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                        <path
-                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
-                    </svg>
+                    <i class="bi bi-exclamation-circle-fill"></i>
                 </div>
                 <h4>Fogyás szálkásitás</h4>
                 <p>
@@ -195,12 +135,7 @@
             </div>
             <div class="services-content">
                 <div class="services-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
-                        viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                        <path
-                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
-                    </svg>
+                    <i class="bi bi-exclamation-circle-fill"></i>
                 </div>
                 <h4>Tömegnövelés izomépités</h4>
                 <p>
@@ -219,12 +154,7 @@
             </div>
             <div class="services-content">
                 <div class="services-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
-                        viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                        <path
-                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
-                    </svg>
+                    <i class="bi bi-exclamation-circle-fill"></i>
                 </div>
                 <h4>Személyi edzés</h4>
                 <p>
@@ -243,12 +173,7 @@
             </div>
             <div class="services-content">
                 <div class="services-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
-                        viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                        <path
-                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
-                    </svg>
+                    <i class="bi bi-exclamation-circle-fill"></i>
                 </div>
                 <h4>Verseny Felkészités</h4>
                 <p>
@@ -267,12 +192,7 @@
             </div>
             <div class="services-content">
                 <div class="services-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
-                        viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                        <path
-                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
-                    </svg>
+                    <i class="bi bi-exclamation-circle-fill"></i>
                 </div>
                 <h4>Erőszint növelés</h4>
                 <p>
@@ -291,12 +211,7 @@
             </div>
             <div class="services-content">
                 <div class="services-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-exclamation-circle"
-                        viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                        <path
-                            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z" />
-                    </svg>
+                    <i class="bi bi-exclamation-circle-fill"></i>
                 </div>
                 <h4>Étrend Készités</h4>
                 <p>
@@ -312,6 +227,65 @@
                     </div>
                     <a href="" class="btn btn-outline-warning">Megnézem</a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="location">
+        <div class="location-container container-my">
+
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/carousel-img0.jpg" class="d-block w-100" alt="carousel-00">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carousel-img1.jpg" class="d-block w-100" alt="carousel-01">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carousel-img2.jpg" class="d-block w-100" alt="carousel-02">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/carousel-img3.jpg" class="d-block w-100" alt="carousel-03">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="location-content-container">
+                <div class="location-content-head about-text-h4">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <h5>Edzés helye:</h5>
+                </div>
+                <h3 class="about-text-h2">Budapest, BESTGYM</h3>
+                <p class="about-text-p"> Lorem, ipsum dolor sit <span class="text-color">amet consectetur
+                        adipisicing elit.</span> Maxime, iusto
+                    excepturi quas laudantium
+                    veritatis illum? Iure mollitia <span class="text-color">perferendis totam quidem corporis quam vitae
+                        accusamus vero minima
+                        recusandae!</span> Animi, ab dolore. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Aspernatur
+                </p>
+                <h5>NYITVATARTÁS:</h5>
+                <h6>H-P: 6:00-0:00</h6>
+                <h6>SZ-V: 8:00-22:00</h6>
             </div>
         </div>
     </section>
@@ -529,11 +503,11 @@
                             </p>
                         </div>
                     </div>
-                    <!-- --------------------------------------------------------- -->
                 </div>
             </div>
         </div>
     </section>
+
     <section id="contact">
         <div class="container-my">
             <div class="contact-h">

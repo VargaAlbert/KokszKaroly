@@ -24,7 +24,7 @@
 .slider {
     background-color: var(--main-background);
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-    height: 500px;
+    height: 550px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -35,7 +35,7 @@
 .slider::after {
     /*  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
     content: "";
-    height: 500px;
+    height: 550px;
     position: absolute;
     width: 200px;
     z-index: 2;
