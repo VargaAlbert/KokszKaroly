@@ -10,10 +10,6 @@
     display: flex;
 }
 
-.location-content-container>h3 {}
-
-.location-content-container>P {}
-
 .location-content-container>h5 {
     color: var(--main-orange);
     letter-spacing: 0.1rem;

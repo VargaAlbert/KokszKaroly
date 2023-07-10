@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="./css/references.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Koksz Károly</title>
 </head>
@@ -56,13 +56,13 @@
                     aspernatur et sed obcaecati. Amet, ipsam quidem.
                 </h4>
                 <div class="home-button">
-                    <a class="btn btn-outline-warning" href="">Rólam</a>
-                    <a class="btn-two btn btn-warning " href="">Szolgáltatások</a>
+                    <a class="btn btn-outline-warning" href="#about">Rólam</a>
+                    <a class="btn-two btn btn-warning" href="#services">Szolgáltatások</a>
                 </div>
             </div>
         </div>
-        <div class="home-black-div">
-        </div>
+        <!--         <div class="home-black-div">
+        </div> -->
     </section>
 
     <section id="about">
@@ -130,7 +130,7 @@
                         <span class="gold-color">GOLD</span>
                     </div>
                     <h6>35.000Ft-tól.</h6>
-                    <a href="" class="btn btn-outline-warning">Megnézem</a>
+                    <a href="./html/szemelyi-edzes.html" class="btn btn-outline-warning">Megnézem</a>
                 </div>
             </div>
             <div class="services-content">
@@ -149,6 +149,7 @@
                         <span class="silver-color">SILVER</span>
                         <span class="gold-color">GOLD</span>
                     </div>
+                    <h6>35.000Ft-tól.</h6>
                     <a href="" class="btn btn-outline-warning">Megnézem</a>
                 </div>
             </div>
@@ -168,6 +169,7 @@
                         <span class="silver-color">SILVER</span>
                         <span class="gold-color">GOLD</span>
                     </div>
+                    <h6>35.000Ft-tól.</h6>
                     <a href="" class="btn btn-outline-warning">Megnézem</a>
                 </div>
             </div>
@@ -187,6 +189,7 @@
                         <span class="silver-color">SILVER</span>
                         <span class="gold-color">GOLD</span>
                     </div>
+                    <h6>35.000Ft-tól.</h6>
                     <a href="" class="btn btn-outline-warning">Megnézem</a>
                 </div>
             </div>
@@ -206,6 +209,7 @@
                         <span class="silver-color">SILVER</span>
                         <span class="gold-color">GOLD</span>
                     </div>
+                    <h6>35.000Ft-tól.</h6>
                     <a href="" class="btn btn-outline-warning">Megnézem</a>
                 </div>
             </div>
@@ -225,6 +229,7 @@
                         <span class="silver-color">SILVER</span>
                         <span class="gold-color">GOLD</span>
                     </div>
+                    <h6>35.000Ft-tól.</h6>
                     <a href="" class="btn btn-outline-warning">Megnézem</a>
                 </div>
             </div>
@@ -290,6 +295,7 @@
         </div>
     </section>
     <section id="references">
+        <h2 class="references-h2">Akiknek már segítettem:</h2>
         <div class="slider-container container-my">
             <div class="slider">
                 <div class="slide-track">
@@ -553,24 +559,46 @@
     <footer>
         <div class="container-my">
             <div class="footer-content">
-                <div class="footer-div">
-                    <h3>információk</h3>
-                    <h5>Gyakori kérdések</h5>
-                    <h5>Adatkezelési tájékoztató</h5>
-                    <h5>Általános szerződési feltételek</h5>
+                <div class="footer-div-info footer-grid-row1">
+
+                    <div>
+                        <h3 class="footer-h3">információk</h3>
+                        <h5><a href="">Gyakori kérdések.</a></h5>
+                        <h5><a href="">Adatvédelmi irányelvek.</a></h5>
+                        <h5><a href="">Impresszum.</a></h5>
+                        <h5><a href="">Vásárlási Feltételek.</a></h5>
+                        <h5><a href="">Sütik (cookie) kezelése.</a></h5>
+                    </div>
+
+                    <div class="footer-logo">
+                        <img src="./img/favicon.ico" alt="">
+                        <h4 class="footer-h4">KOKSZ KÁROLY</h4>
+                    </div>
+
                 </div>
-                <div class="footer-div">
-                    <h3>Gyurma-app</h3>
-                    <h5>Android</h5>
-                    <h5>ISO</h5>
-                    <h5>PC</h5>
+                <div class="footer-div footer-grid-row1">
+                    <h3 class="footer-h3">Gyurma-app</h3>
+                    <h4 class="footer-app-h4">Letöltés:</h4>
+                    <img class="footer-img" src="./img/google-play-logo.png" alt="google-play-logo">
+                    <img class="footer-img" src="./img/apple-store-logo.png" alt="apple-store-logo">
                 </div>
+
                 <div class="footer-div">
-                    <h3>Social media</h3>
-                    <h5>Instagram</h5>
-                    <h5>TikTok</h5>
-                    <h5>Facebook</h5>
-                    <h5>YouTube</h5>
+                    <h3 class="footer-h3">Social media</h3>
+                    <div class="footer-social-icon">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-tiktok"></i>
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                </div>
+                <div class="footer-div-form">
+                    <h3 class="footer-h3">Iratkozz fel hitlevelünkre:</h3>
+                    <form action="GET">
+                        <input class="footer-form" type="text" placeholder="Neved" />
+                        <input class="footer-form" type="email" placeholder="E-Mail" />
+                        <button class="btn-two btn btn-warning footer-form-button" type="submit">Feliratkozás!</button>
+                    </form>
                 </div>
             </div>
             <P class="footer-p">COPYRIGHT &copy; 2023 Varga Albert</p>
