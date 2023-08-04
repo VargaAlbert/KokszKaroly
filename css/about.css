@@ -1,5 +1,20 @@
+main {
+    overflow: hidden;
+}
+
 #about {
     background-color: var(--main-background);
+    position: relative;
+}
+
+.about-black-div {
+    background-color: var(--main-background);
+    width: 200%;
+    height: 8rem;
+    position: absolute;
+    top: -8rem;
+    transform: rotate(-4deg);
+    z-index: 1;
 }
 
 .about-container {
@@ -10,6 +25,8 @@
     height: 100%;
     display: grid;
     align-items: center;
+    z-index: 2;
+    position: relative;
 }
 
 .about-text-h4 {
@@ -20,6 +37,7 @@
     color: var(--main-orange);
     font-size: 2.5rem;
     font-weight: 700;
+    z-index: 2;
 }
 
 .about-text-p {

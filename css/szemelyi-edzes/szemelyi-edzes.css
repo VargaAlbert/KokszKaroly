@@ -7,7 +7,7 @@
 .services-head {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/carousel-01.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../img/carousel-01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,27 +27,36 @@
         "CH";
 }
 
+.main-p {
+    color: var(--font-color);
+    margin: 5rem 0 0 0;
+    margin-bottom: 0;
+}
+
 .main-h2 {
     color: var(--main-orange);
-    padding-top: 3rem;
+    padding-top: 0.6rem;
     padding-bottom: 2rem;
     font-size: 3rem;
     font-family: Georgia, serif;
-    text-align: center;
+    text-transform: uppercase;
+    /* text-align: center; */
 }
 
 .main-h3 {
+    font-size: 1.4rem;
     font-style: italic;
-    color: var(--main-white);
-    text-align: center;
+    color: var(--font-color);
+    /* text-align: center; */
     padding-bottom: 2rem;
 }
 
 .grid-hed-0 {
     grid-area: AH;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .grid-hed-1 {
@@ -61,6 +70,11 @@
     justify-content: space-around;
     align-items: flex-end;
     align-content: flex-start
+}
+
+.grid-hed-3>p {
+    margin-bottom: 0;
+    color: var(--font-color);
 }
 
 .h4-gold {
@@ -94,8 +108,11 @@
 }
 
 .grid-hed-2>h4 {
-    font-size: 2rem;
     padding: 1rem;
+}
+
+.grid-hed-2>h4>a {
+    font-size: 1.4rem;
 }
 
 .grid-hed-2>h4:hover {
@@ -118,16 +135,33 @@
 
 .description-content h2 {
     color: var(--main-paleorange);
+    font-size: 2rem;
+    font-weight: 800;
 }
 
-.description h4 {
+.description p {
     color: var(--font-color);
+    font-weight: 400;
+}
+
+.strong {
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .description-h5 {
     text-align: center;
     color: var(--font-color);
     text-shadow: 1px 1px 2px pink;
+}
+
+.description-quote {
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px var(--main-orange) solid;
+    background-color: transparent;
+    clip-path: polygon(0 0, 50px 0, 99% 5%, 100% 70%, 100% 100%, 70% 100%, 1% 95%, 0 50px);
+    padding: 2rem;
 }
 
 /* ---description-end-- */
@@ -178,12 +212,12 @@
 .price-body>ul {
     display: inline-block;
     padding: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 500;
 }
 
 .price-body>ul>li {
     list-style-type: "✓";
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .price-h3 {
@@ -243,3 +277,65 @@
 }
 
 /* ---PRICE-END--- */
+
+@media (min-width: 576px) {
+    .grid-hed-2 {
+        grid-area: CH;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .services-head {
+        height: 30rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .main-h2 {
+        font-size: 3.5rem;
+    }
+
+    .main-h3 {
+        font-size: 1.8rem;
+    }
+
+    .services-head {
+        height: 40rem;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+    }
+}
+
+@media (min-width: 992px) {
+
+    .grid-hed-2 {
+        grid-area: CH;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-end;
+        align-content: flex-end;
+        margin-bottom: 4rem;
+    }
+
+    .services-head {
+        height: 50rem;
+    }
+
+    .services-grid-head {
+        grid-template-columns: 60% 40%;
+        justify-content: flex-end;
+        grid-template-areas:
+            "AH CH"
+            "BH CH";
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1440px) {}

@@ -4,39 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/szemelyi-edzes/szemelyi-edzes.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/szemelyi-edzes/responsive-szemelyi-edzes.css">
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap"
+        rel="stylesheet">
     <title>Koksz Károly</title>
 </head>
 
-<body>
+<body id="body">
     <header>
         <nav class="nav">
             <section class="top-nav container-my">
                 <div class="logo">
-                    <a href="./index.html">KOKSZ KÁROLY</a>
+                    <a href="#carouselExampleCaptions">KOKSZ KÁROLY</a>
                 </div>
                 <input id="menu-toggle" type="checkbox" />
                 <label class='menu-button-container' for="menu-toggle">
                     <span class='menu-button'></span>
                 </label>
                 <ul class="menu">
-                    <li><a href="#about">Bemutatkozás</a></li>
-                    <li><a href="#services">Szolgáltatások</a></li>
-                    <li><a href="#references">Referenciák</a></li>
-                    <li><a href="#prices">Árak</a></li>
-                    <li><a href="#contact">Élérhetőségek</a></li>
+                    <li><a href="../index.html#about">Bemutatkozás</a></li>
+                    <li><a href="../index.html#services">Szolgáltatások</a></li>
+                    <li><a href="../index.html#references">Referenciák</a></li>
+                    <li><a href="../index.html#prices">Árak</a></li>
+                    <li><a href="../index.html#contact">Élérhetőségek</a></li>
                 </ul>
                 <span class="nav-icon">
-                    <img src="./img/cart3.svg" alt="bevásárlokocsiikon">
+                    <i class="bi bi-cart-fill"></i>
                     <span class="crat-text">Kosár(0)</span>
                 </span>
             </section>
@@ -46,11 +52,11 @@
         <section class="services-head">
             <div class="services-grid-head container-my">
                 <div class="grid-hed-0">
+                    <p class="main-p">Személyre szabott segítség</p>
                     <h2 class="main-h2">
                         Személyi edzés
                     </h2>
                 </div>
-
                 <div class="grid-hed-1">
                     <h3 class="main-h3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem eaque excepturi
                         molestiae inventore aut
@@ -59,7 +65,6 @@
                         consequatur iusto error asperiores!
                     </h3>
                 </div>
-
                 <div class="grid-hed-2">
                     <h4><a class="h4-gold" href="#gold">GOLD</a></h4>
                     <h4><a class="h4-silver" href="#silver">SILVER</a></h4>
@@ -69,40 +74,56 @@
         </section>
         <section class="description">
             <div class="container-my">
-                <h5 class="description-h5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea animi
-                    quaerat doloremque
-                    sed, magnam deleniti temporibus. Rem est a vel corrupti dolores, distinctio voluptatum quas,
-                    perferendis!"
-                </h5>
                 <div class="description-content">
                     <h2>Prémium személyi edzés</h2>
-                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit eligendi vero accusamus a aut
-                        tenetur, velit quos ea in molestias, neque saepe qui maiores perferendis dolores nobis,
+                    <p class="description-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span
+                            class="strong">Odit eligendi
+                            vero accusamus a
+                            aut
+                            tenetur, velit quos ea in molestias.</span> Neque saepe qui maiores perferendis dolores
+                        nobis,
                         doloremque
-                        consectetur. Deleniti!</h4>
+                        consectetur. Deleniti!</p>
                 </div>
                 <div class="description-content">
                     <h2>Látszódó eredmény rövid időn belül</h2>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita praesentium ratione amet ipsum
-                        minima delectus inventore, veniam et quibusdam obcaecati eligendi corporis reprehenderit nemo
+                    <p class="description-p">Lorem ipsum dolor sit <span class="strong">amet consectetur adipisicing
+                            elit. Expedita</span>>
+                        praesentium ratione amet ipsum
+                        minima delectus inventore, veniam et quibusdam obcaecati eligendi corporis reprehenderit
+                        nemo
                         magnam
-                        voluptate ullam id alias explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Repudiandae ad maxime facilis quo..</h4>
+                        voluptate ullam id alias explicabo? Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                        Repudiandae ad maxime facilis quo..</p>
+                </div>
+                <div class="description-quote">
+                    <p class="description-h5">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ea
+                        animi
+                        quaerat doloremque
+                        sed, magnam deleniti temporibus. Rem est a vel corrupti dolores, distinctio voluptatum quas,
+                        perferendis!"
+                    </p>
                 </div>
                 <div class="description-content">
                     <h2>Mindig a leghatékonyabb edzések</h2>
-                    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima molestiae voluptatibus officia
+                    <p class="description-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima molestiae
+                        voluptatibus officia
                         optio nulla, provident repudiandae, expedita natus odio enim ex repellendus impedit dicta odit
                         velit
-                        corrupti! Eveniet, unde ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                        praesentium. Laboriosam, perspiciatis alias.</h4>
+                        corrupti! Eveniet, unde ut. <span class="strong">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.</span> Modi,
+                        praesentium. Laboriosam, perspiciatis alias.</p>
                 </div>
                 <div class="description-content">
-                    <h2>Fizetési konstrukciók</h2>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maxime dolor ab ullam asperiores
+                    <h2>Fizetési konstrukciók, 3 csomag</h2>
+                    <p class="description-p">Lorem ipsum dolor sit <span class="strong">amet consectetur adipisicing
+                            elit.</span> Quos maxime dolor
+                        ab ullam asperiores
                         modi?
-                        Harum cumque quos quaerat, repellat nemo tempore sapiente illum recusandae! Quas, aperiam
-                        voluptates! Ea, voluptate.</h4>
+                        Harum cumque quos quaerat, repellat nemo tempore sapiente <span class="strong">illum
+                            recusandae!</span> Quas, aperiam
+                        voluptates! Ea, voluptate.</p>
                 </div>
             </div>
         </section>
@@ -200,24 +221,46 @@
     <footer>
         <div class="container-my">
             <div class="footer-content">
-                <div class="footer-div">
-                    <h3>információk</h3>
-                    <h5>Gyakori kérdések</h5>
-                    <h5>Adatkezelési tájékoztató</h5>
-                    <h5>Általános szerződési feltételek</h5>
+                <div class="footer-div-info footer-grid-row1">
+
+                    <div class="footer-information">
+                        <h3 class="footer-h3">információk</h3>
+                        <h5><a href="">Gyakori kérdések.</a></h5>
+                        <h5><a href="">Adatvédelmi irányelvek.</a></h5>
+                        <h5><a href="">Impresszum.</a></h5>
+                        <h5><a href="">Vásárlási Feltételek.</a></h5>
+                        <h5><a href="">Sütik (cookie) kezelése.</a></h5>
+                    </div>
+
+                    <div class="footer-logo">
+                        <img src="./img/favicon.ico" alt="">
+                        <h4 class="footer-h4">KOKSZ KÁROLY</h4>
+                    </div>
+
+                </div>
+                <div class="footer-div-app footer-grid-row1">
+                    <h3 class="footer-h3">Gyurma-app</h3>
+                    <h4 class="footer-app-h4">Letöltés:</h4>
+                    <img class="footer-img" src="../img/google-play-logo.png" alt="google-play-logo">
+                    <img class="footer-img" src="../img/apple-store-logo.png" alt="apple-store-logo">
                 </div>
                 <div class="footer-div">
-                    <h3>Gyurma-app</h3>
-                    <h5>Android</h5>
-                    <h5>ISO</h5>
-                    <h5>PC</h5>
+                    <h3 class="footer-h3">Social media</h3>
+                    <div class="footer-social-icon">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-tiktok"></i>
+                        <i class="bi bi-youtube"></i>
+                    </div>
                 </div>
-                <div class="footer-div">
-                    <h3>Social media</h3>
-                    <h5>Instagram</h5>
-                    <h5>TikTok</h5>
-                    <h5>Facebook</h5>
-                    <h5>YouTube</h5>
+                <div class="footer-div-form">
+                    <h3 class="footer-h3">Iratkozz fel hitlevelünkre:</h3>
+                    <h4 class="footer-app-h4">Prémium edzés tippekért!</h4>
+                    <form action="GET">
+                        <input class="footer-form" type="text" placeholder="Neved" />
+                        <input class="footer-form" type="email" placeholder="E-Mail" />
+                        <button class="btn-two btn btn-warning footer-form-button" type="submit">Feliratkozás!</button>
+                    </form>
                 </div>
             </div>
             <P class="footer-p">COPYRIGHT &copy; 2023 Varga Albert</p>
