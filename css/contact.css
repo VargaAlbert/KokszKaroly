@@ -1,7 +1,6 @@
 #contact {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/contact-img.jpg');
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
     color: var(--main-white);
@@ -167,8 +166,6 @@ input[type="date"] {
             "formF formF"
             "formG formG";
     }
-
-
 }
 
 @media (min-width: 992px) {}

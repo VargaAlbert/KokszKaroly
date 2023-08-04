@@ -41,7 +41,7 @@ main {
 }
 
 .about-text-p {
-    color: #E8EAED;
+    color: var(--font-color-secondary);
 }
 
 .text-color {

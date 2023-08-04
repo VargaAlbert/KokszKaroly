@@ -20,7 +20,7 @@
 }
 
 .location-content-container>h6 {
-    color: #E8EAED;
+    color: var(--font-color-secondary);
     font-size: 1.2rem;
     text-align: center;
     list-style: none;
