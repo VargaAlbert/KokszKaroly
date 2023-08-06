@@ -1,6 +1,7 @@
 #references {
     border-top: 4px solid var(--main-orange);
     background-color: var(--main-background);
+    padding: 5rem 0;
 }
 
 .references-h2 {

@@ -175,7 +175,7 @@
 
 .price-container {
 
-    margin: 2rem;
+    margin: 5rem 2rem;
     background-color: var(--main-background);
     display: flex;
     flex-wrap: wrap;
@@ -313,6 +313,10 @@
 
 @media (min-width: 992px) {
 
+    .grid-hed-0 {
+        justify-content: flex-end;
+    }
+
     .grid-hed-2 {
         grid-area: CH;
         display: flex;
@@ -321,6 +325,10 @@
         align-items: flex-end;
         align-content: flex-end;
         margin-bottom: 4rem;
+    }
+
+    .grid-hed-2>h4>a {
+        font-size: 2rem;
     }
 
     .services-head {
