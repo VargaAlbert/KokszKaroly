@@ -1,0 +1,12 @@
+@use "variable";
+
+.navbar {
+    .navbar-brand,
+    a {
+        color: variable.$color-main-mainorange;
+    }
+}
+
+.opacity-90 {
+    opacity: 0.9;
+}

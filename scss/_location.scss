@@ -1,0 +1,57 @@
+@use "variable";
+
+#location {
+    background-color: variable.$color-background-main;
+}
+
+.location-content-container {
+    padding: 2rem 1rem;
+
+    .location-content-head {
+        h5 {
+            color: variable.$color-basic-white;
+        }
+    }
+
+    h6 {
+        color: variable.$color-font-secondary;
+        font-size: variable.$size-r10 + 0.2rem;
+        text-align: center;
+        list-style: none;
+    }
+
+    p {
+        color: variable.$color-font-secondary;
+        span {
+            color: variable.$color-main-mainorange;
+        }
+    }
+
+    h5 {
+        color: variable.$color-main-mainorange;
+        letter-spacing: 0.1rem;
+        font-size: variable.$size-r15;
+        text-decoration: underline;
+        text-align: center;
+    }
+}
+
+.location-content-head {
+    color: variable.$color-basic-white;
+    @include variable.flexBox(row, nowrap, normal, normal, normal);
+}
+
+@include variable.Small {
+}
+@include variable.Medium {
+}
+@include variable.Large {
+    .location-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+}
+@include variable.Extra-large {
+}
+@include variable.XXL-large {
+}

@@ -1,0 +1,79 @@
+@use "variable";
+
+main {
+    overflow: hidden;
+}
+
+#about {
+    background-color: variable.$color-background-main;
+    position: relative;
+}
+
+.black-div {
+    background-color: variable.$color-background-main;
+    width: 200%;
+    height: 8rem;
+    position: absolute;
+    top: -8rem;
+    transform: rotate(-4deg);
+    z-index: 1;
+}
+
+.about-container {
+    padding: 1rem 0;
+
+    .about-img-container {
+        height: 100%;
+        display: grid;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.about-text-container {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+
+    .about-text {
+        h4 {
+            color: variable.$color-basic-white;
+        }
+
+        h2 {
+            z-index: 2;
+        }
+
+        p {
+            color: variable.$color-font-primary;
+            span {
+                color: variable.$color-main-mainorange;
+            }
+        }
+    }
+}
+
+@include variable.Small {
+}
+@include variable.Medium {
+    .about-container {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+@include variable.Large {
+    .about-img-container {
+        img {
+            width: 100%;
+        }
+    }
+}
+@include variable.Extra-large {
+}
+@include variable.XXL-large {
+}

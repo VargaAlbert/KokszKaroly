@@ -1,0 +1,287 @@
+@use "reset";
+@use "variable";
+@use "nav";
+@use "footer";
+
+.container-my {
+    max-width: 1440px;
+    width: 95%;
+    margin: auto;
+}
+
+.text-h2 {
+    color: variable.$color-main-mainorange;
+    font-size: variable.$size-r25;
+    font-weight: variable.$weights-7;
+}
+
+@include variable.Large {
+    .text-h2 {
+        font-size: variable.$size-r30;
+        font-weight: variable.$weights-8;
+    }
+}
+
+@include variable.XXL-large {
+    .text-h2 {
+        font-size: variable.$size-r35;
+        font-weight: variable.$weights-9;
+    }
+}
+
+.services-head {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/carousel-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 5px solid variable.$color-main-paleorange;
+    display: grid;
+
+    p {
+        color: variable.$color-font-primary;
+        margin: 5rem 0 0 0;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: variable.$size-r15;
+        font-style: italic;
+        color: variable.$color-font-primary;
+        padding-bottom: 2rem;
+    }
+}
+
+.services-grid-head {
+    width: 95vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: flex-end;
+    grid-template-areas:
+        "AH"
+        "BH"
+        "CH";
+
+    div {
+        &:first-child {
+            grid-area: AH;
+            @include variable.flexBox(column, nowrap, normal, center, flex-start);
+        }
+
+        &:nth-child(2) {
+            grid-area: BH;
+        }
+
+        &:last-child {
+            grid-area: CH;
+            @include variable.flexBox(row, wrap, flex-start, space-around, flex-end);
+
+            h4 {
+                padding: 1rem;
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+$colorarry: (cbronz, csilver, cgold);
+@each $color, $cbronz in variable.$color-price {
+    .h4-#{$color} {
+        color: map-get(variable.$color-price, #{$color});
+
+        &:hover {
+            text-decoration: underline;
+            text-shadow: map-get(variable.$color-price, #{$color}) 1px 0 10px;
+        }
+    }
+
+    .price-color-#{$color} {
+        color: map-get(variable.$color-price, #{$color});
+    }
+}
+
+/* ----description---- */
+.description {
+    padding: 5rem 0;
+    background-color: variable.$color-background-main;
+
+    p {
+        color: variable.$color-font-primary;
+        font-weight: variable.$weights-4;
+
+        span {
+            text-transform: uppercase;
+            font-weight: variable.$weights-5;
+        }
+    }
+}
+
+.description-content {
+    padding: 1.5rem 0;
+
+    h2 {
+        color: variable.$color-main-paleorange;
+        font-size: variable.$size-r20;
+        font-weight: variable.$weights-8;
+    }
+}
+
+.description-quote {
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 2px solid variable.$color-main-mainorange;
+    background-color: transparent;
+    clip-path: polygon(0 0, 50px 0, 99% 5%, 100% 70%, 100% 100%, 70% 100%, 1% 95%, 0 50px);
+    padding: 2rem;
+    p {
+        text-align: center;
+        color: variable.$color-font-primary;
+        text-shadow: 1px 1px 2px pink;
+    }
+}
+
+/* -----PRICE----- */
+#price-section {
+    background-color: variable.$color-background-main;
+    border-top: 5px solid variable.$color-main-paleorange;
+    border-bottom: 5px solid variable.$color-main-paleorange;
+}
+
+.price-container {
+    margin: 5rem 2rem;
+    background-color: variable.$color-background-main;
+    @include variable.flexBox(row, wrap, normal, space-evenly, normal);
+}
+
+.price-content {
+    border-radius: 10px;
+    height: 600px;
+    width: 300px;
+    min-width: 250px;
+    margin: 1rem 1rem;
+    @include variable.flexBox(column, wrap, normal, space-between, center);
+    text-align: center;
+    background-color: variable.$color-background-price;
+}
+
+.price-head {
+    h3 {
+        text-align: center;
+        padding: 0.5rem;
+        font-size: variable.$size-r30;
+        font-weight: variable.$weights-8;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: variable.$size-r20;
+        font-weight: variable.$weights-5;
+        text-decoration: underline;
+    }
+}
+.price-body {
+    ul {
+        display: inline-block;
+        padding: 0.5rem;
+
+        li {
+            list-style-type: "✓";
+            font-size: variable.$size-r15;
+            font-weight: variable.$weights-7;
+        }
+    }
+}
+
+.price-h3 {
+    font-size: variable.$size-r30;
+    font-weight: variable.$weights-6;
+}
+
+.price-button-container {
+    padding: 1rem;
+    button {
+        width: 80%;
+        height: 3rem;
+    }
+}
+
+$colorarry: (cbronz, csilver, cgold);
+@each $color, $cbronz in variable.$color-price {
+    .border-#{$color} {
+        border: 2px solid map-get(variable.$color-price, #{$color});
+
+        &:hover {
+            box-shadow:
+                map-get(variable.$color-price, #{$color}) 0px 2px 8px,
+                map-get(variable.$color-price, #{$color}) 0px 0px 0px 6px;
+        }
+    }
+
+    .price-color-#{$color} {
+        color: map-get(variable.$color-price, #{$color});
+    }
+}
+
+@include variable.Small {
+    .services-grid-head {
+        div {
+            &:last-child {
+                @include variable.flexBox(row, nowrap, normal, space-around, flex-end);
+            }
+        }
+    }
+
+    .services-head {
+        height: 30rem;
+    }
+}
+@include variable.Medium {
+    .services-head {
+        height: 40rem;
+
+        h3 {
+            font-size: variable.$size-r15 + 0.3rem;
+        }
+    }
+}
+@include variable.Large {
+    .services-grid-head {
+        grid-template-columns: 60% 40%;
+        justify-content: flex-end;
+        grid-template-areas:
+            "AH CH"
+            "BH CH";
+
+        div {
+            &:first-child {
+                justify-content: flex-end;
+            }
+
+            &:last-child {
+                @include variable.flexBox(row, nowrap, flex-end, space-around, flex-end);
+                margin-bottom: 4rem;
+                h4 {
+                    a {
+                        font-size: variable.$size-r20;
+                    }
+                }
+            }
+        }
+    }
+
+    .services-head {
+        height: 50rem;
+    }
+}
+@include variable.Extra-large {
+}
+@include variable.XXL-large {
+}

@@ -8,41 +8,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/services.css">
-    <link rel="stylesheet" href="./css/location.css">
-    <link rel="stylesheet" href="./css/references.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/footer.css">
+
+
+
+
+
+
+
+    <!-- <link rel="stylesheet" href="./css/footer.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>Koksz Károly</title>
 </head>
 
 <body>
     <header>
-        <nav id="nav" class="nav">
-            <section class="top-nav container-my">
-                <div class="logo">
-                    <a href="#nav">KOKSZ KÁROLY</a>
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary opacity-90" data-bs-theme="dark">
+            <div class="container-fluid container-my">
+                <a class="navbar-brand fs-4 fw-bold" href="#">KOKSZ KÁROLY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-center fw-bold" href="#about">Bemutatkozás</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center fw-bold" href="#services">Szolgáltatások</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center fw-bold" href="#references">Referenciák</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center fw-bold" href="#services">Árak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-center fw-bold" href="#contact">Élérhetőségek</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex justify-content-end" role="search">
+                        <button class="btn btn-outline-warning" type="submit">
+                            <i class="bi bi-cart-fill"></i>
+                            Kosár(0)
+                        </button>
+                    </form>
                 </div>
-                <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                    <span class='menu-button'></span>
-                </label>
-                <ul class="menu">
-                    <li><a href="#about">Bemutatkozás</a></li>
-                    <li><a href="#services">Szolgáltatások</a></li>
-                    <li><a href="#references">Referenciák</a></li>
-                    <li><a href="#prices">Árak</a></li>
-                    <li><a href="#contact">Élérhetőségek</a></li>
-                </ul>
-                <span class="nav-icon">
-                    <i class="bi bi-cart-fill"></i>
-                    <span class="crat-text">Kosár(0)</span>
-                </span>
-            </section>
+            </div>
         </nav>
     </header>
     <main>
@@ -63,38 +77,36 @@
             </div>
         </section>
         <section id="about">
-            <div class="about-black-div">
+            <div class="black-div">
             </div>
             <div class="about-container container-my">
                 <div class="about-text-container">
                     <div class="about-text">
-                        <h4 class="about-text-h4">Rólam:</h4>
-                        <h2 class="about-text-h2">KOKSZ KÁROLY</h2>
-                        <p class="about-text-p">Lorem ipsum dolor sit <span class="text-color">amet consectetur
+                        <h4>Rólam:</h4>
+                        <h2 class="text-h2">KOKSZ KÁROLY</h2>
+                        <p class="text-p">Lorem ipsum dolor sit <span>amet consectetur
                                 adipisicing
                                 elit.</span> Aperiam
                             nisi
                             autem dignissimos
                             minus
                             similique
-                            laudantium minima maxime ipsam cumque ab, <span class="text-color">itaque reiciendis
+                            laudantium minima maxime ipsam cumque ab, <span>itaque reiciendis
                                 sit</span>
                             reprehenderit non quam
                             tenetur.</p>
-                        <p class="about-text-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span
-                                class="text-color">Delectus qui
+                        <p class="text-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span>Delectus qui
                                 accusamus, ex dolorem
                                 iusto
                                 impedit</span> laudantium eum corrupti id alias mollitia quis. Corporis rem, quia quis
                             soluta
                             necessitatibus
-                            molestias pariatur? <span class="text-color">Lorem ipsum dolor sit amet consectetur</span>
+                            molestias pariatur? <span>Lorem ipsum dolor sit amet consectetur</span>
                             adipisicing elit. Illo,
                             odio. Veritatis
                             qui
                             voluptates quas porro veniam debitis nisi ea fugiam.</p>
-                        <p class="about-text-p">Lorem ipsum dolor sit amet consectetur <span
-                                class="text-color">adipisicing
+                        <p class="text-p">Lorem ipsum dolor sit amet consectetur <span>adipisicing
                                 elit.</span> Sit
                             officia
                             repudiandae atque
@@ -107,14 +119,14 @@
                     </div>
                 </div>
                 <div class="about-img-container">
-                    <img class="about-img" src="./img/about-img.png" alt="koksz-karoly">
+                    <img src="./img/about-img.png" alt="koksz-karoly">
                 </div>
             </div>
         </section>
         <section id="services">
             <div class="services-title">
-                <h3 class="service-h3">SZOLGÁLTATÁSOK:</h3>
-                <h2 class="service-h2">MIBEN TUDOK SEGITENI?</h2>
+                <h3>SZOLGÁLTATÁSOK:</h3>
+                <h2 class="text-h2">MIBEN TUDOK SEGITENI?</h2>
             </div>
             <div class="services-container container-my">
                 <div class="services-content">
@@ -288,11 +300,11 @@
                         <i class="bi bi-geo-alt-fill"></i>
                         <h5>Edzés helye:</h5>
                     </div>
-                    <h3 class="about-text-h2">Budapest, BESTGYM</h3>
-                    <p class="about-text-p"> Lorem, ipsum dolor sit <span class="text-color">amet consectetur
+                    <h2 class="text-h2">Budapest, BESTGYM</h2>
+                    <p class="text-p"> Lorem, ipsum dolor sit <span>amet consectetur
                             adipisicing elit.</span> Maxime, iusto
                         excepturi quas laudantium
-                        veritatis illum? Iure mollitia <span class="text-color">perferendis totam quidem corporis quam
+                        veritatis illum? Iure mollitia <span>perferendis totam quidem corporis quam
                             vitae
                             accusamus vero minima
                             recusandae!</span> Animi, ab dolore. Lorem ipsum dolor, sit amet consectetur adipisicing
@@ -306,243 +318,104 @@
             </div>
         </section>
         <section id="references">
-            <h2 class="references-h2">Akiknek már segítettem:</h2>
+            <h2 class="text-h2">Akiknek már segítettem:</h2>
             <div class="slider-container container-my">
+
                 <div class="slider">
                     <div class="slide-track">
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref00.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Kiss István</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
+                        <div class="ref-content" style=" --delay:-1;">
+                            <img class="ref-img" src="./img/ref00.jpg" alt="references-1">
                             <div class="ref-text">
+                                <h5 class="ref-name">Kiss István</h5>
                                 <h6> +10kg / 3 hónap</h6>
                                 <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
+                                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
                                     tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
+                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam
+                                    molestiae."
                                 </p>
+                                <div class="star-rating">
+                                    <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref01.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Szabó Regina</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
+                        <div class="ref-content" style="--delay:0;">
+                            <img class="ref-img" src="./img/ref01.jpg" alt="references-2">
                             <div class="ref-text">
-                                <h6> -5kg / 2 hónap</h6>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
-                                    tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref02.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Nagy Anita</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
-                            <div class="ref-text">
-                                <h6> -14kg / 4 hónap</h6>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
-                                    tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref03.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Kovács János</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
-                            <div class="ref-text">
-                                <h6> +8kg / 3 hónap</h6>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
-                                    tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref00.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Nagy Béla</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
-                            <div class="ref-text">
-                                <h6> -4kg / 1 hónap</h6>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
-                                    tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref01.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Jakab Anna</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
-                            <div class="ref-text">
-                                <h6> -3kg / 2 hét</h6>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
-                                    tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref02.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Virág Katalin</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
-                            <div class="ref-text">
-                                <h6> -7kg / 6 hónap</h6>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
-                                    tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref00.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Kiss István</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
-                            <div class="ref-text">
+                                <h5 class="ref-name">Nagy Béla</h5>
                                 <h6> +10kg / 3 hónap</h6>
                                 <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
+                                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
                                     tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
+                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam
+                                    molestiae."
                                 </p>
+                                <div class="star-rating">
+                                    <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref01.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Szabó Regina</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
+                        <div class="ref-content" style="--delay:1;">
+                            <img class="ref-img" src="./img/ref02.jpg" alt="references-3">
                             <div class="ref-text">
-                                <h6> -5kg / 2 hónap</h6>
+                                <h5 class="ref-name">Varga Virág</h5>
+                                <h6> +10kg / 3 hónap</h6>
                                 <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
+                                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
                                     tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
+                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam
+                                    molestiae."
                                 </p>
+                                <div class="star-rating">
+                                    <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref02.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Nagy Anita</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
+                        <div class="ref-content" style="--delay:2;">
+                            <img class="ref-img" src="./img/ref03.jpg" alt="references-4">
                             <div class="ref-text">
-                                <h6> -14kg / 4 hónap</h6>
+                                <h5 class="ref-name">Szabó Péter</h5>
+                                <h6> +10kg / 3 hónap</h6>
                                 <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
+                                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
                                     tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
+                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam
+                                    molestiae."
                                 </p>
+                                <div class="star-rating">
+                                    <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref03.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Kovács János</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
+                        <div class="ref-content" style="--delay:2;">
+                            <img class="ref-img" src="./img/ref04.jpg" alt="references-5">
                             <div class="ref-text">
-                                <h6> +8kg / 3 hónap</h6>
+                                <h5 class="ref-name">Nagy Antal</h5>
+                                <h6> +10kg / 3 hónap</h6>
                                 <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
+                                    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
                                     tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
+                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam
+                                    molestiae."
                                 </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref00.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Nagy Béla</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
-                            <div class="ref-text">
-                                <h6> -4kg / 1 hónap</h6>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
-                                    tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref01.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Jakab Anna</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
-                            <div class="ref-text">
-                                <h6> -3kg / 2 hét</h6>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
-                                    tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slide">
-                            <img class="ref-img" src="./img/ref02.jpg" alt="velemeny-egy">
-                            <h5 class="ref-name">Virág Katalin</h5>
-                            <div class="star-rating">
-                                <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
-                            </div>
-                            <div class="ref-text">
-                                <h6> -7kg / 6 hónap</h6>
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas mollitia quis,
-                                    tempore ex
-                                    libero dolores optio eaque ut repellat velit, expedita quisquam quae ipsam molestiae
-                                    dolor incidunt. Facere, recusandae aspernatur.
-                                </p>
+                                <div class="star-rating">
+                                    <span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span><span>&#11088;</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="ref-img-container">
+                    <img src="./img/ref-img.jpg" alt="ref-img">
+                </div>
+
             </div>
         </section>
         <section id="contact">
             <div class="container-my">
                 <div class="contact-h">
-                    <h2 class="contact-h2">Fordulj hozzám bizalommal.</h2>
-                    <h5 class="contact-h5">
+                    <h2 class="text-h2">Fordulj hozzám bizalommal.</h2>
+                    <h5 class="">
                         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora optio provident
                         blanditiis neque."
                     </h5>
@@ -550,29 +423,29 @@
                 <div class="form-contener">
                     <form action="GET">
                         <div class="grid-contener-form">
-                            <div class="grid-contener-form-item0 styled-input">
+                            <div class="grid-contener-form-itemA styled-input">
                                 <input type="text" name="name" class="form-input" placeholder="Teljes neved." required>
                             </div>
-                            <div class="grid-contener-form-item1 styled-input">
+                            <div class="grid-contener-form-itemB styled-input">
                                 <input type="email" name="email" class="form-input" placeholder="example@gmail.com"
                                     required>
                             </div>
-                            <div class="grid-contener-form-item2 styled-input">
+                            <div class="grid-contener-form-itemC styled-input">
                                 <input type="tel" name="phone" class="form-input" placeholder="06-30-515-5555" required>
                             </div>
-                            <div class="grid-contener-form-item3">
+                            <div class="grid-contener-form-itemD">
                                 <label><input type="radio" id="huey" name="drone" value="men">Férfi</label>
                                 <label><input type="radio" id="dewey" name="drone" value="girl">Nő</label>
                                 <label><input type="radio" id="louie" name="drone" value="no-nem" checked>Nem adom
                                     meg</label>
                             </div>
-                            <div class="grid-contener-form-item4">
+                            <div class="grid-contener-form-itemE">
                                 <input type="date" name="date" class="form-input">
                             </div>
-                            <div class="grid-contener-form-item5">
+                            <div class="grid-contener-form-itemF">
                                 <textarea placeholder="Üzenet:" name="mesage" class="form-input" required></textarea>
                             </div>
-                            <div class="grid-contener-form-item6">
+                            <div class="grid-contener-form-itemG">
                                 <button type="submit" class="btn btn-outline-warning">Elküld</button>
                             </div>
                         </div>
@@ -587,7 +460,7 @@
                 <div class="footer-div-info footer-grid-row1">
 
                     <div class="footer-information">
-                        <h3 class="footer-h3">információk</h3>
+                        <h3>információk</h3>
                         <h5><a href="">Gyakori kérdések.</a></h5>
                         <h5><a href="">Adatvédelmi irányelvek.</a></h5>
                         <h5><a href="">Impresszum.</a></h5>
@@ -597,19 +470,19 @@
 
                     <div class="footer-logo">
                         <img src="./img/favicon.ico" alt="">
-                        <h4 class="footer-h4">KOKSZ KÁROLY</h4>
+                        <h2>KOKSZ KÁROLY</h2>
                     </div>
 
                 </div>
                 <div class="footer-div-app footer-grid-row1">
-                    <h3 class="footer-h3">Gyurma-app</h3>
+                    <h3>Gyurma-app</h3>
                     <h4 class="footer-app-h4">Letöltés:</h4>
                     <img class="footer-img" src="./img/google-play-logo.png" alt="google-play-logo">
                     <img class="footer-img" src="./img/apple-store-logo.png" alt="apple-store-logo">
                 </div>
 
                 <div class="footer-div">
-                    <h3 class="footer-h3">Social media</h3>
+                    <h3>Social media</h3>
                     <div class="footer-social-icon">
                         <i class="bi bi-instagram"></i>
                         <i class="bi bi-facebook"></i>
@@ -618,7 +491,7 @@
                     </div>
                 </div>
                 <div class="footer-div-form">
-                    <h3 class="footer-h3">Iratkozz fel hitlevelünkre:</h3>
+                    <h3>Iratkozz fel hitlevelünkre:</h3>
                     <h4 class="footer-app-h4">Prémium edzés tippekért!</h4>
                     <form action="GET">
                         <input class="footer-form" type="text" placeholder="Neved" />
@@ -627,9 +500,11 @@
                     </form>
                 </div>
             </div>
-            <P class="footer-p">COPYRIGHT &copy; 2023 Varga Albert</p>
+            <P>COPYRIGHT &copy; 2023 Varga Albert</p>
         </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>

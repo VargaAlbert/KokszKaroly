@@ -1,0 +1,151 @@
+@use "variable";
+
+#references {
+    border-top: 4px solid variable.$color-main-mainorange;
+    background-color: variable.$color-basic-black;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.slider-container {
+    @include variable.flexBox(column, nowrap, normal, normal, normal);
+}
+
+.ref-img-container {
+    img {
+        width: 100%;
+        border: 4px solid variable.$color-main-mainorange;
+        clip-path: polygon(0 0, 50px 0, 99% 1%, 100% 70%, 100% 100%, 70% 100%, 1% 99%, 0 50px);
+    }
+}
+
+.slider {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ref-content {
+    background: variable.$color-main-gray;
+    width: 100%;
+    max-width: 600px;
+    @include variable.flexBox(column, nowrap, normal, space-around, center);
+    padding: 10xp;
+    position: absolute;
+    border-radius: 100px 20px 20px 100px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    animation: animate 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+
+    img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: -5px;
+        background: variable.$color-basic-white;
+        border-radius: 50%;
+        padding: 1%;
+        box-shadow: 0px 0py 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .ref-text {
+        margin: 0 10px 0 25%;
+        @include variable.flexBox(column, nowrap, normal, normal, center);
+
+        h5 {
+            font-size: variable.$size-r15;
+            font-weight: variable.$weights-7;
+            letter-spacing: 0.1rem;
+        }
+
+        h6 {
+            font-size: variable.$size-r10;
+            font-weight: variable.$weights-6;
+        }
+    }
+}
+
+.star-rating {
+    margin: 0 0 0.5rem;
+
+    span {
+        font-size: variable.$size-r15;
+    }
+}
+
+.slider:hover .ref-content {
+    animation-play-state: paused;
+}
+
+.slide-track .ref-content:last-child {
+    animation-delay: calc(-3s * var(--delay));
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateY(100%) scale(0.5);
+    }
+
+    5%,
+    20% {
+        opacity: 0.4;
+        transform: translateY(100%) scale(0.7);
+    }
+
+    25%,
+    40% {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0%) scale(1);
+    }
+
+    45%,
+    60% {
+        opacity: 0.4;
+        transform: translateY(-100%) scale(0.7);
+    }
+
+    65%,
+    100% {
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5);
+    }
+}
+
+@include variable.Small {
+}
+@include variable.Medium {
+    .ref-content {
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+@include variable.Large {
+}
+@include variable.Extra-large {
+    .slider {
+        width: 50%;
+    }
+
+    .ref-img-container {
+        width: 50%;
+        @include variable.flexBox(column, nowrap, normal, center, normal);
+    }
+
+    .slider-container {
+        @include variable.flexBox(row, nowrap, normal, normal, normal);
+    }
+}
+@include variable.XXL-large {
+}

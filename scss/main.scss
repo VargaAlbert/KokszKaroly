@@ -1,0 +1,53 @@
+@use "reset";
+@use "variable";
+@use "nav";
+@use "home";
+@use "about";
+@use "services";
+@use "location";
+@use "references";
+@use "contact";
+@use "footer";
+
+.container-my {
+    max-width: 1440px;
+    width: 95%;
+    margin: auto;
+}
+
+.text-h2 {
+    color: variable.$color-main-mainorange;
+    font-size: variable.$size-r25;
+    font-weight: variable.$weights-7;
+}
+
+.text-p {
+    color: variable.$color-font-secondary;
+    span {
+        color: variable.$color-main-mainorange;
+    }
+}
+@include variable.Large {
+    .text-h2 {
+        font-size: variable.$size-r30;
+        font-weight: variable.$weights-8;
+    }
+    .text-p,
+    .text-p span {
+        font-size: variable.$size-r10 + 0.2rem;
+    }
+}
+
+@include variable.XXL-large {
+    .text-h2 {
+        font-size: variable.$size-r35;
+        font-weight: variable.$weights-9;
+    }
+
+    .text-p {
+        font-size: variable.$size-r15;
+        span {
+            font-size: variable.$size-r15;
+        }
+    }
+}

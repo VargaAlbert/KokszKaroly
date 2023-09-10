@@ -1,0 +1,87 @@
+@use "variable";
+
+#home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/home.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 60rem;
+    display: grid;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-contant {
+    margin: 2rem 0.5;
+    color: variable.$color-main-mainorange;
+
+    h1 {
+        color: variable.$color-main-mainorange;
+        font-size: variable.$size-r25;
+        font-weight: variable.$weights-7;
+    }
+
+    h3 {
+        color: variable.$color-font-primary;
+        font-size: variable.$size-r15;
+        margin: 1.5rem 0;
+    }
+
+    h4 {
+        color: variable.$color-font-primary;
+        font-size: variable.$size-r10;
+    }
+}
+
+.home-button {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    a {
+        width: 8rem;
+        font-weight: variable.$weights-6;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@include variable.Small {
+    .home-button {
+        gap: 2rem;
+    }
+
+    .home-contant {
+        margin: 2rem;
+    }
+}
+@include variable.Medium {
+    .home-contant {
+        h1 {
+            font-size: variable.$size-r30;
+        }
+
+        h3 {
+            font-size: variable.$size-r15;
+        }
+
+        h4 {
+            font-size: variable.$size-r10 + 0.2rem;
+        }
+    }
+}
+@include variable.Large {
+    .home-contant-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+@include variable.Extra-large {
+}
+@include variable.XXL-large {
+}

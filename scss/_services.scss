@@ -1,0 +1,161 @@
+@use "variable";
+
+#services {
+    background-color: variable.$color-background-main;
+    border-top: 4px solid variable.$color-main-mainorange;
+}
+
+.services-title {
+    margin: 5rem 0 0;
+    text-align: center;
+
+    h3 {
+        margin-top: 1.2rem;
+        font-size: variable.$size-r15;
+        letter-spacing: 0.2rem;
+        color: variable.$color-basic-white;
+    }
+
+    h2 {
+        padding: 0 0.5rem;
+    }
+}
+
+.services-container {
+    display: grid;
+    grid-template-rows: repeat(6, 6fr);
+    padding: 0 0 5rem;
+}
+
+.services-content {
+    position: relative;
+    border: 2px solid variable.$color-main-mainorange;
+    background-color: transparent;
+    clip-path: polygon(0 0, 50px 0, 99% 1%, 100% 70%, 100% 100%, 70% 100%, 1% 99%, 0 50px);
+    margin: 1rem;
+    padding: 2rem;
+    min-height: 300px;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.871);
+        opacity: 0;
+        z-index: 1;
+        transform: scaleY(0);
+        transform-origin: 100% 100%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    &:hover {
+        .services-btn {
+            opacity: 1;
+            top: 40%;
+        }
+    }
+
+    h4 {
+        font-size: variable.$size-r20;
+        margin: 1rem 0;
+        color: variable.$color-main-mainorange;
+        font-weight: variable.$weights-6;
+    }
+
+    p {
+        color: variable.$color-basic-white;
+        font-weight: variable.$weights-6;
+        font-size: variable.$size-r10 + 0.2rem;
+    }
+}
+
+.services-icon {
+    height: 3rem;
+    @include variable.flexBox(row, nowrap, normal, space-between, center);
+
+    i {
+        color: variable.$color-basic-white;
+        font-size: variable.$size-r25;
+    }
+}
+
+.compilation-container {
+    img {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.services-btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+
+    & > div {
+        padding: 0 0 2rem;
+        span {
+            margin: 0 0.2rem;
+            font-size: variable.$size-r10 + 0.2rem;
+        }
+    }
+
+    h5 {
+        font-weight: variable.$weights-6;
+        color: variable.$color-basic-white;
+    }
+
+    h6 {
+        color: variable.$color-basic-white;
+        padding-bottom: 0.3rem;
+        font-weight: variable.$weights-6;
+    }
+}
+
+.bronz-color {
+    color: map-get(variable.$color-price, cbronz);
+}
+
+.silver-color {
+    color: map-get(variable.$color-price, csilver);
+}
+
+.gold-color {
+    color: map-get(variable.$color-price, cgold);
+}
+
+@include variable.Small {
+}
+@include variable.Medium {
+    .services-container {
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(3, 3fr);
+    }
+}
+@include variable.Large {
+}
+@include variable.Extra-large {
+    .services-container {
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: repeat(2, 2fr);
+    }
+}
+@include variable.XXL-large {
+}
